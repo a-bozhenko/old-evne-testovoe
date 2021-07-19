@@ -1,0 +1,760 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+@import "../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css"
+@import "../../node_modules/owl.carousel/dist/assets/owl.theme.default.css"
+
+// $accent: #8564c1
+// $text: #8998a7
+// $pink: #ed5792
+// $text-dark: #57616b
+// $text-footer: #4f6569
+// $dark-purpul: #4b3770
+// $gutter: 30px
+.burger 
+	display: none
+// .myriad
+// 	font-family: "MyriadPro", sans-serif
+.grid
+	display: grid
+
+.flex 
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+
+.container 
+	margin: auto
+	max-width: 1160px
+	width: calc(100% - 40px)
+header
+	box-shadow: 0px 0px 12px 5px rgba(0,0,0,0.11)
+.header 
+	height: 95px
+	grid-template-columns: 1fr 1fr
+	font-size: 15px
+	font-weight: 500
+	box-shadow-bottom: 3px 3px 3px red
+	.logo
+		padding-top: 10px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+
+.main-nav-container 
+	.main-nav 
+		flex-direction: row
+		justify-content: flex-end
+		align-items: stretch
+		vertical-align: center
+		padding-left: 0
+		margin: 0
+		li
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: center
+			list-style-type: none
+			margin-right: 45px
+			&:last-child
+				margin-right: 0
+			a 
+				color: $text-footer
+				position: relative
+				white-space: nowrap
+				text-decoration: none
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				align-items: stretch
+				height: 100%
+				align-items: center
+				transition: color ease-in-out .3s
+				&::before
+					content: ''
+					width: 0%
+					transition: width ease-in-out .3s
+				&:hover, &:focus, &:active
+					color: $accent
+					&::before 
+						content: ''
+						position: absolute
+						bottom: 0
+						left: 0
+						width: 100%
+						height: 2px
+						background-color: $accent
+			&.book-now-btn 
+				background-color: $accent
+				a 
+					padding: 0 $gutter
+					color: #fff
+					transition: background-color ease-in-out 0.3s
+					&:hover, &:focus, &:active
+						background-color: darken($accent, 11%)
+	
+h1, h2, h3, h4, h5, h6 
+	font-family: 'Lucida Grande', sans-serif	
+	color: $text-dark
+	margin: 0
+	line-height: 1
+	font-weight: normal
+h1
+	font-size: 42px
+h2
+	font-size: 42px
+p
+	color: $text	
+.section-head 
+	text-align: center
+	max-width: 745px
+	margin: auto
+	.section-head-text
+		font-size: 18px
+		word-break: keep-all
+		
+.services 
+	margin-top: 120px
+	
+.pricing-boxes 
+	margin-top: 70px
+	align-items: baseline
+	justify-content: center
+	.price-box
+		margin-right: $gutter
+		width: 165px
+		height: 165px
+		background-color: #8d68c1
+		text-align: center
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+		justify-content: center
+		padding: 10px
+		border-radius: 5px
+		filter: drop-shadow(0px 15px 12px rgba(57,73,78,0.28))
+		position: relative
+		font-size: 18px
+		color: $dark-purpul
+		font-weight: 500
+		position: relative
+		transition: all ease-in-out .5s
+		top: 0
+		&:hover
+			top: -20px
+			filter: drop-shadow(0px 15px 12px rgba(57,73,78,0.35))
+		&:last-child
+			margin-right: 0
+		.price-box-top
+			min-height: 40px			
+			line-height: 1
+			vertical-align: top
+			margin-bottom: 15px
+		.price-amount
+			color: #fff
+			font-size: 41px
+			line-height: 1
+			font-weight: 400
+		.roun-before
+			width: 40px
+			height: 40px
+			background-color: #8d68c1
+			border-radius: 100%
+			position: absolute
+			top: -20px
+			left: 40%
+			left: calc(50% - 20px)
+			z-index: -1
+		.round-after
+			width: 40px
+			height: 40px
+			background-color: #8d68c1
+			border-radius: 100%
+			position: absolute
+			bottom: -20px
+			left: 40%
+			left: calc(50% - 20px)
+			z-index: -1
+			
+.estimator-wrapper 
+	margin-top: 130px
+	.price-estimator-main
+		flex-direction: row
+		margin-top: 70px
+		padding: 70px 60px
+		box-shadow: 0 0 18px 14px #39494e26
+		.price-estimator-result
+			flex-basis: 230px
+			margin-left: 60px
+			.price-estimator-result-title 
+				font-size: 20px
+				color: $text-dark
+				margin: 0
+				line-height: 1
+				margin-bottom: 20px
+			.time-amount
+				margin-bottom: 5px
+				color: $accent
+				font-size: 20px
+				font-weight: normal
+			.price-amount
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				flex-direction: row
+				justify-content: flex-start
+				align-items: flex-start
+				margin-bottom: 55px
+				#price-amount
+					font-size: 65px
+					color: $accent
+					margin-right: 20px
+					line-height: 1
+				.price-amount-text 
+					color: #bbc1cd
+					line-height: 1.2
+					font-size: 14px
+					text-transform: uppercase
+					max-width: 50px
+		.price-estimator-swichers
+			margin-right: 13px
+			flex-basis: 660px
+			.price-estimator-line
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				align-items: stretch
+				justify-content: flex-start
+				flex-basis: 200px
+				// justify-content: flex-end
+				// flex-wrap: nowrap
+				// align-content: stretch
+				flex-direction: row
+				margin-bottom: 20px
+				&:last-child
+					margin-bottom: 0
+				.price-estimator-line-name
+					width: 110px
+					min-width: 110px
+					margin-right: 40px
+					display: -webkit-flex
+					display: -moz-flex
+					display: -ms-flex
+					display: -o-flex
+					display: flex
+					align-items: center
+					font-size: 20px
+					font-weight: 400
+					line-height: 1.2
+					color: $text-dark
+				.price-estimator-btns
+					width: 100%
+					display: -webkit-flex
+					display: -moz-flex
+					display: -ms-flex
+					display: -o-flex
+					display: flex
+					flex-direction: row
+					text-align: center
+					// justify-content: space-between
+					.price-estimator-btn 
+						&.recurring
+							flex-basis: 168px
+						&.oneoff
+							flex-basis: 179px	
+						&.endoflease
+							flex-basis: 169px
+						margin-right: 22px
+						&:last-child
+							margin-right: 0
+						input
+							display: none
+							&:checked + label
+								background-color: $accent
+								color: white
+						label
+							font-size: 20px
+							display: -webkit-flex
+							display: -moz-flex
+							display: -ms-flex
+							display: -o-flex
+							display: flex
+							min-width: 67px
+							min-height: 67px
+							justify-content: center
+							align-items: center
+							background-color: white
+							border: 1px solid #8e9bb5
+							border-radius: 5px
+							// margin-right: 20px
+							cursor: pointer
+							padding: 15px
+							transition: all ease-in-out 0.3s
+							&:hover
+								background-color: $accent80
+								color: white
+							&.f14
+								font-size: 14px
+							
+.slider-wrapper 
+	margin-top: 130px
+	.section-head 
+		margin-bottom: 60px
+	
+.owl-carousel 
+	.item
+		background-color: #eef6f8
+		padding: 10px
+		overflow: hidden
+		min-height: 280px
+		margin-right: 20px
+		.white-wrapper
+			background-color: #fff
+			padding: 25px
+			position: relative
+			min-height: calc(100% - 5px)
+			&::before
+				content: ''
+				position: absolute
+				right: -50px
+				top: -50px
+				background-color: #eef6f8
+				width: 100px
+				height: 100px
+				transform: rotate(45deg)
+				z-index: 1
+			&::after
+				content: ''
+				position: absolute
+				right: 5px
+				top: 5px
+				border-radius: 100%
+				width: 25px
+				height: 25px
+				background-color: #fff
+				z-index: 2
+			.item-title
+				font-size: 31px
+				color: $accent
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				flex-direction: row
+				justify-content: flex-start
+				align-items: center
+				line-height: 1
+				.item-discount 
+					font-size: 13px
+					line-height: 1
+					margin-left: 20px
+					color: #ed5792
+			.item-sub-title
+				font-size: 20px
+				color: #57616b
+				margin-bottom: 13px
+			.item-text
+				font-size: 16px
+				color: #737778
+			.item-code
+				margin-top: 40px
+				font-size: 16px
+				color: $accent
+			p
+				margin: 0
+	.owl-dots
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-top: 70px
+		.owl-dot 
+			height: 17.5px
+			width: 17.5px
+			margin-right: 10px
+			border-radius: 100%
+			border: 2px solid #bbcdde
+			&:last-child
+				margin-right: 0
+			&.active, &:hover
+				background-color: #57616b
+				border-color: #57616b
+				
+	
+section
+	&.grey
+		background-color: #fafcfd
+		
+		
+.tables-wrapper 
+	margin-top: 120px
+	padding-top: 100px
+	padding-bottom: 100px
+	.grid-table-wrapper
+		margin-bottom: 10px
+.grid-table 
+	.table-grid-head
+		display: grid
+		grid-template-columns: minmax(150px, 300px) repeat(3, 1fr)
+		align-items: center
+		justify-content: center
+		align-content: center
+		text-align: center
+		position: relative
+		font-size: 20px
+		margin-bottom: 20px
+		>span 
+			padding: 25px 4px
+		.tabel-label 
+			position: absolute
+			background-color: $accent
+			padding: 6px 22px
+			border-radius: 6px
+			box-shadow: 0px 4px 12px 7px #7e8c9538
+			color: white
+			left: -14px
+			top: 90px
+			font-size: 15px
+			&.no-head 
+				top: 50px
+	.table-grid-content
+		display: grid
+		grid-template-columns: minmax(150px, 300px) repeat(3, 1fr)
+		align-items: center
+		justify-content: center
+		align-content: center
+		text-align: center
+		padding: 20px 30px
+		background-color: #fff
+		box-shadow: 0px 4px 12px 7px #7e8c9538
+		>span 
+			padding: 20px 8px
+			border-bottom: 1px solid #bbc1cd
+			&:nth-last-child(1), &:nth-last-child(2), &:nth-last-child(3), &:nth-last-child(4)
+				border-bottom: none
+			&:nth-child(4n+1)
+				justify-content: flex-start	
+		  	
+.grid-table .table-grid-content > span:nth-child(4n+1) 
+  text-align: left
+
+.youget-wrapper 
+	margin-top: 140px
+
+.youget-blocks
+	.youget-block
+		margin-top: 100px
+		margin-left: 50px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		div:first-of-type
+			margin-right: 80px
+		.youget-title
+			font-weight: 500
+			max-width: 250px
+			font-size: 20px
+			line-height: 1.3
+			margin-bottom: 20px
+		p.checked
+			padding-left: 30px
+			margin-top: 0
+			font-size: 16px
+			position: relative
+			margin-bottom: 10px
+			&:last-child
+				margin-bottom: 0
+			&::before
+				content: ''
+				position: absolute
+				width: 20px
+				height: 20px
+				background-image: url('../img/checkmark.png')
+				background-repeat: no-repeat
+				left: 5px
+				top: 5px
+				display: block
+			&.icon-plus::before
+				background-image: url('../img/plus.png')
+	.youget-img
+		img
+			box-shadow: 0px 4px 27px 13px #cedbe445
+
+	
+.exclusion
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: row
+	justify-content: flex-start
+	align-items: flex-start
+	margin-top: 100px
+	.exclusion-text
+		font-size: 16px
+		max-width: 640px
+	.exclusion-with-icon
+		min-width: 210px
+		padding-left: 30px
+		position: relative
+		color: $accent
+		font-size: 15px
+		font-weight: 600
+		&::before
+			content: ''
+			position: absolute
+			width: 30px
+			height: 30px
+			background-image: url('../img/info icon.png')
+			background-repeat: no-repeat
+			left: 0px
+			top: 0px
+			display: block
+	
+.book-now-wrapper
+	.book-now
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 80px
+		.book-now-text
+			// max-width: 523px
+			flex-basis: 525px
+			.book-now-desc
+				font-weight: 500
+				font-size: 18px
+			.book-now-title
+				font-size: 42px
+		.book-now-btns
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-basis: 500px
+			flex-direction: row
+			justify-content: space-between
+			align-items: flex-start
+			font-size: 15px
+
+.book-btn 
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-basis: 100%
+	.btn 
+		padding: 15px
+		width: 100%
+		color: #fff
+		text-decoration: none
+		font-size: 15px
+		text-align: center
+		font-weight: 500
+		border: 1px solid #bbc1cd
+		color: #bbc1cd
+		text-transform: uppercase
+		transition: all ease-in-out 0.5s
+		&:hover, &:focus, &:active
+			background-color: darken($accent, 20%)
+			box-shadow: 0px 0px 18px 14px #39494e36
+			color: #fff
+		&.btn-long
+			min-width: 150px
+			max-width: 220px
+			width: 100%
+		&.active
+			border-color: $accent
+			background-color: $accent
+			color: white
+			box-shadow: 0px 0px 18px 14px #39494e26
+			&:hover, &:focus, &:active
+				background-color: darken($accent, 20%)
+				box-shadow: 0px 0px 18px 14px #39494e36
+		&.btn-round
+			border-radius: 40px
+	
+	
+.footer-wrapper
+	margin-top: 100px
+	display: grid
+	grid-template-columns: repeat(4, 1fr) 
+	justify-items: center
+	justify-content: center
+	.flogo-wrapper
+		justify-self: start
+		.ftext
+			margin-top: 25px
+			font-size: 16px
+			max-width: 250px
+			color: $text-footer
+			line-height: 1.3
+	.cities-wrapper
+		justify-self: end
+		.cities-title
+			color: $accent
+			font-size: 15px
+			font-weight: 500
+		.cities-list
+			list-style: none
+			color: $text-footer
+			a
+				color: $text-footer
+				&:hover, &focus
+					opacity: 0.8
+					text-decoration: underline
+				&:active
+					color: $text-footer
+	.footer-menu-wrapper
+		.footer-menu
+			margin-top: 0
+			list-style: none
+			padding-left: 0
+			li
+				padding-left: 0
+				a
+					color: $text-footer
+					text-decoration: none
+					&:hover, &focus
+						opacity: 0.8
+						text-decoration: underline
+					&:active
+						color: $text-footer
+	.adress-wrapper
+		margin-left: 30px		
+	.with-icon
+			padding-left: 40px
+			position: relative
+			line-height: 1.3
+			font-size: 15px
+			margin-top: 0
+			color: $text-footer
+			&::before
+				content: ''
+				position: absolute
+				width: 30px
+				height: 30px
+				background-image: url('')
+				background-repeat: no-repeat
+				left: 5px
+				top: 0px
+				display: block
+			&.adress::before
+				background-image: url('../img/home.png')
+			&.phone::before
+				background-image: url('../img/phone_1_.png')	
+			&.cities-title::before
+				left: 10px
+				top: 0px
+				background-image: url('../img/map-marker.png')	
+			&.email
+				a
+					color: $text-footer
+					text-decoration: none
+					&:hover, &focus
+						opacity: 0.8
+						text-decoration: underline
+					&:active
+						color: $text-footer
+				&::before
+					background-image: url('../img/email.png')			
+		
+.copyrigth-wrapper
+	padding-bottom: 60px
+	margin-top: 30px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: flex-end
+	.created-by
+		// flex-basis: 360px
+		.created-by-text
+			font-size: 15px
+			font-weight: 500
+			margin-bottom: 20px	
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: space-between
+			align-items: center
+			.line
+				height: 1px
+				width: 37px
+				background-color: #6d7678
+	.copyrigth
+		margin-left: 150px
+		justify-self: center
+		margin-right: 170px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		width: 100%
+		a
+			color: $text-footer
+			text-decoration: none
+			&:hover, &focus
+				opacity: 0.8
+				text-decoration: underline
+			&:active
+				color: $text-footer
+	
+// Пользовательские стили
+
+hr
+	background-color: #fafcfd
+	border-color: #fafcfd
+
+main 
+	margin-bottom: 100px
+footer
+	padding-top: 100px
+	background-color: #fafcfd
+	color: $text-footer
+
+
+@import "media" // Всегда в конце

@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Task for Even frontend developer, Andrey Bozhenko</title>
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+<header>
+    <section>
+        <div class="container grid header">
+            <div class="logo">
+                <a href="#"><img alt="" src="img/Logo.png"></a>
+            </div>
+            <div class="main-nav-container flex">
+                <div class="burger"><img src="img/burger.png"></div>
+                <ul class="main-nav flex">
+                    <li class="nav-child active"><a href="#"><span class="link-text">SERVICES & PRICING</span></a></li>
+                    <li class="nav-child"><a href="#"><span class="link-text">LOCATIONS</span></a></li>
+                    <li class="nav-child"><a href="#"><span class="link-text">FAQ</span></a></li>
+                    <li class="nav-child"><a href="#"><span class="link-text">BUILDERS CLEANS</span></a></li>
+                    <li class="nav-child"><a href="#"><span class="link-text">CONTACT</span></a></li>
+                    <li class="nav-child book-now-btn"><a class="book-now" href="#"><span
+                            class="link-text">BOOK NOW</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</header>
+
+<main>
+    <section>
+        <div class="container services">
+            <div class="section-head">
+                <h2>Services & Pricing</h2>
+                <p class="section-head-text">We offer simple pricing based on an hourly rate. We always provide an
+                    obligation-free in-person visit so you will always get an accurate price. No</p>
+            </div>
+            <div class="pricing-boxes flex">
+                <div class="price-box">
+                    <div class="roun-before"></div>
+                    <div class="round-after"></div>
+                    <div class="price-box-top">Recurring</div>
+                    <div class="price-amount">$33</div>
+                    <div class="price-box-bottom">Per Hour</div>
+                </div>
+                <div class="price-box">
+                    <div class="roun-before"></div>
+                    <div class="round-after"></div>
+                    <div class="price-box-top">One-Off
+                        Cleaning
+                    </div>
+                    <div class="price-amount">$40</div>
+                    <div class="price-box-bottom">Per Hour</div>
+                </div>
+                <div class="price-box">
+                    <div class="roun-before"></div>
+                    <div class="round-after"></div>
+                    <div class="price-box-top">Single Oven
+                        Cleaning
+                    </div>
+                    <div class="price-amount">$55</div>
+                    <div class="price-box-bottom">PER OVEN</div>
+                </div>
+                <div class="price-box">
+                    <div class="roun-before"></div>
+                    <div class="round-after"></div>
+                    <div class="price-box-top">Double Oven
+                        Cleaning
+                    </div>
+                    <div class="price-amount">$70</div>
+                    <div class="price-box-bottom">PER OVEN</div>
+                </div>
+                <div class="price-box">
+                    <div class="roun-before"></div>
+                    <div class="round-after"></div>
+                    <div class="price-box-top">Laundry<br/>Wash & Dry</div>
+                    <div class="price-amount">$40</div>
+                    <div class="price-box-bottom">PER BASKET</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container estimator-wrapper">
+            <div class="section-head">
+                <h1>Price Estimator</h1>
+                <p class="section-head-text">Select the number of bedrooms, bathrooms, and home condidtion to see your
+                    estimated price. From here, booking is simple and only takes 60 seconds</p>
+            </div>
+
+            <form action="#" target="#" id="price-estimator" class="price-estimator-main flex">
+                <div class="price-estimator-swichers">
+                    <div class="price-estimator-line">
+                        <div class="price-estimator-line-name">Bedrooms</div>
+                        <div class="price-estimator-btns">
+                            <div class="price-estimator-btn">
+                                <input type="radio" id="bedrooms-1" name="bedrooms" value="1" checked="checked">
+                                <label for="bedrooms-1">1</label>
+                            </div>
+                            <div class="price-estimator-btn">
+                                <input type="radio" id="bedrooms-2" name="bedrooms" value="2">
+                                <label for="bedrooms-2">2</label>
+                            </div>
+                            <div class="price-estimator-btn">
+                                <input type="radio" id="bedrooms-3" name="bedrooms" value="3">
+                                <label for="bedrooms-3">3</label>
+                            </div>
+                            <div class="price-estimator-btn">
+                                <input type="radio" id="bedrooms-4" name="bedrooms" value="4">
+                                <label for="bedrooms-4">4</label>
+                            </div>
+                            <div class="price-estimator-btn">
+                                <input type="radio" id="bedrooms-5" name="bedrooms" value="5">
+                                <label for="bedrooms-5">5</label>
+                            </div>
+                            <div class="price-estimator-btn">
+                                <input type="radio" id="bedrooms-6" name="bedrooms" value="6">
+                                <label for="bedrooms-6">6</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="price-estimator-line">
+                        <div class="price-estimator-line-name">Bathrooms</div>
+                        <div class="price-estimator-btns">
+                            <div class="price-estimator-btn">
+                                <input type="radio" id="bathrooms-1" name="bathrooms" value="1" checked="checked">
+                                <label for="bathrooms-1">1</label>
+                            </div>
+                            <div class="price-estimator-btn">
+                                <input type="radio" id="bathrooms-2" name="bathrooms" value="2">
+                                <label for="bathrooms-2">2</label>
+                            </div>
+                            <div class="price-estimator-btn">
+                                <input type="radio" id="bathrooms-3" name="bathrooms" value="3">
+                                <label for="bathrooms-3">3</label>
+                            </div>
+                            <div class="price-estimator-btn">
+                                <input type="radio" id="bathrooms-4" name="bathrooms" value="4">
+                                <label for="bathrooms-4">4</label>
+                            </div>
+                            <div class="price-estimator-btn">
+                                <input type="radio" id="bathrooms-5" name="bathrooms" value="5">
+                                <label for="bathrooms-5">5</label>
+                            </div>
+                            <div class="price-estimator-btn">
+                                <input type="radio" id="bathrooms-6" name="bathrooms" value="6">
+                                <label for="bathrooms-6">6</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="price-estimator-line">
+                        <div class="price-estimator-line-name">Home condition</div>
+                        <div class="price-estimator-btns">
+                            <div class="price-estimator-btn">
+                                <input type="radio" id="condition-1" name="condition" value="1" checked="checked">
+                                <label for="condition-1" class="f14">Slight markings or dirt</label>
+                            </div>
+                            <div class="price-estimator-btn">
+                                <input type="radio" id="condition-2" name="condition" value="2">
+                                <label for="condition-2" class="f14">Moderate Making or dirt</label>
+                            </div>
+                            <div class="price-estimator-btn">
+                                <input type="radio" id="condition-3" name="condition" value="3">
+                                <label for="condition-3" class="f14">Heavy markings or dirt</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="price-estimator-line">
+                        <div class="price-estimator-line-name">Clean Type</div>
+                        <div class="price-estimator-btns">
+                            <div class="price-estimator-btn recurring">
+                                <input type="radio" id="clean-type-1" name="clean-type" value="1" checked="checked">
+                                <label for="clean-type-1" class="f14">Recurring</label>
+                            </div>
+                            <div class="price-estimator-btn oneoff">
+                                <input type="radio" id="clean-type-2" name="clean-type" value="2">
+                                <label for="clean-type-2" class="f14">One-Off</label>
+                            </div>
+                            <div class="price-estimator-btn endoflease">
+                                <input type="radio" id="clean-type-3" name="clean-type" value="3">
+                                <label for="clean-type-3" class="f14">End of Lease</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="price-estimator-result">
+                    <p class="price-estimator-result-title">Quick Cost Estimate</p>
+                    <div class="time-amount"><span id="time-amount">3 hours</span></div>
+                    <div class="price-amount"><span id="price-amount">$40</span><span class="price-amount-text">PER Clean</span>
+                    </div>
+                    <div class="book-btn"><a href="#" class="btn btn-round active">BOOK MY CLEANING</a></div>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="container slider-wrapper">
+            <div class="section-head">
+                <h2>Lorem ipsum</h2>
+                <p class="section-head-text">Book professional home cleaners and handymen at a moments notice. Just pick
+                    a time and well do the rest.</p>
+            </div>
+
+            <div class="owl-carousel">
+                <div class="item">
+                    <div class="white-wrapper">
+                        <p class="item-title">1 Hour free</p>
+                        <p class="item-sub-title">of heavy markings or dirt</p>
+                        <p class="item-text">Book online in 60 seconds and schedule your home service for as early as
+                            tomorrow.</p>
+                        <p class="item-code">Use code: 12GKUG</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="white-wrapper">
+                        <p class="item-title">$270 <span class="item-discount">Savet $50<br/>Was $320</span></p>
+                        <p class="item-sub-title">for 8 hour one off clean</p>
+                        <p class="item-text">Book online in 60 seconds and schedule your home service for as early as
+                            tomorrow.</p>
+                        <p class="item-code">Use code: Springclean</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="white-wrapper">
+                        <p class="item-title">30% discount </p>
+                        <p class="item-sub-title">for bathrooms</p>
+                        <p class="item-text">Book online in 60 seconds and schedule your home service for as early as
+                            tomorrow.</p>
+                        <p class="item-code">Use code: Springclean</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="white-wrapper">
+                        <p class="item-title">30% discount </p>
+                        <p class="item-sub-title">for bathrooms</p>
+                        <p class="item-text">Book online in 60 seconds and schedule your home service for as early as
+                            tomorrow.</p>
+                        <p class="item-code">Use code: Springclean</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="white-wrapper">
+                        <p class="item-title">30% discount </p>
+                        <p class="item-sub-title">for bathrooms</p>
+                        <p class="item-text">Book online in 60 seconds and schedule your home service for as early as
+                            tomorrow.</p>
+                        <p class="item-code">Use code: Springclean</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="white-wrapper">
+                        <p class="item-title">30% discount </p>
+                        <p class="item-sub-title">for bathrooms</p>
+                        <p class="item-text">Book online in 60 seconds and schedule your home service for as early as
+                            tomorrow.</p>
+                        <p class="item-code">Use code: Springclean</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="white-wrapper">
+                        <p class="item-title">30% discount </p>
+                        <p class="item-sub-title">for bathrooms</p>
+                        <p class="item-text">Book online in 60 seconds and schedule your home service for as early as
+                            tomorrow.</p>
+                        <p class="item-code">Use code: Springclean</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <section class="grey">
+        <div class="container tables-wrapper">
+
+
+            <div class="grid-table-wrapper">
+                <div class="grid-table">
+                    <div class="table-grid-head">
+    <span>
+       <span class="tabel-label">Areas</span>
+    </span>
+                        <span>
+        Routine cleaning
+    </span>
+                        <span>
+        Deep clean
+    </span>
+                        <span>
+        End-of-Lease
+    </span>
+                    </div>
+                    <div class="table-grid-content">
+
+                        <span>Vacuum Carpets</span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+
+                        <span>Dusting</span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+
+                        <span>Sweet and Mop Floors</span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+
+                        <span>Clean Mirrors</span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+
+                        <span>Empty Bins</span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+
+                        <span>Baseboord Detail</span>
+                        <span class="icon icon-no"><img alt="" src="img/cross.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+
+                        <span>Detail Doors / Droo Frames</span>
+                        <span class="icon icon-no"><img alt="" src="img/cross.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+
+                        <span>Detail Tiled floor & Grout</span>
+                        <span class="icon icon-no"><img alt="" src="img/cross.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+
+
+                        <span>Cobweb removal</span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+
+                        <span>Window Tracks</span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- second -->
+
+            <div class="grid-table-wrapper">
+                <div class="grid-table">
+                    <div class="table-grid-head">
+    <span>
+       <span class="tabel-label no-head">Wet Areas</span>
+    </span>
+
+                    </div>
+                    <div class="table-grid-content">
+
+                        <span>Clean Countertops</span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+
+                        <span>Dust Cabinet Doors</span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+
+                        <span>Vacuum Area Rugs</span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+
+                        <span>Polish Cabinate Doors</span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+
+                        <span>Inside cabinates and draws</span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- third -->
+
+            <div class="grid-table-wrapper">
+                <div class="grid-table">
+                    <div class="table-grid-head">
+    <span>
+       <span class="tabel-label no-head">Kitchen</span>
+    </span>
+
+                    </div>
+                    <div class="table-grid-content">
+
+                        <span>Scrub kitchen sinks & splash back</span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+
+                        <span>Stove top and wipe overhead fan</span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+
+                        <span>Wipe splashback and tiles</span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+
+                        <span>Wipe large kitchen appliance</span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+
+                        <span>Clean microwaves</span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+
+                        <span>Counter top appliances</span>
+                        <span class="icon icon-no"><img alt="" src="img/cross.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+
+                        <span>Fill and run dishwasher</span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+
+                        <span>Wipe laundr appliances</span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+
+
+                        <span>Detail stobe top and overhead fan</span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+
+                        <span>Detail tiles and sink</span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                        <span class="icon icon-yes"><img alt="" src="img/checkmark.png"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="container youget-wrapper">
+            <div class="section-head">
+                <h1>Heres what you get!</h1>
+                <p class="section-head-text">Our house cleaners will spend as much time as it takes to get your home
+                    looking as good as new. Have a look below to see what's included:</p>
+            </div>
+
+            <div class="youget-blocks">
+                <div class="youget-block">
+                    <div class="youget-text">
+                        <div class="youget-title myriad">Bedroom, living room and all common areas</div>
+                        <p class="checked">Empty bins</p>
+                        <p class="checked">Vacuum and mop all floors</p>
+                        <p class="checked">Dust & wipe down all surfaces</p>
+                        <p class="checked">Clean cobwebs</p>
+                        <p class="checked">Clean light switches and doorknobs</p>
+                        <p class="checked">Dust furniture</p>
+                        <p class="checked">Clean window ledges</p>
+                    </div>
+                    <div class="youget-img">
+                        <img alt="" src="img/scandinavian-living-room.png" class="img-responcive">
+                    </div>
+                </div>
+
+                <!-- second -->
+
+                <div class="youget-block reverse">
+                    <div class="youget-img">
+                        <img alt="" src="img/FalkenReynolds-cedarwall.png" class="img-responcive">
+                    </div>
+                    <div class="youget-text">
+                        <div class="youget-title myriad">Barthrooms</div>
+                        <p class="checked">Clean all Surfaces</p>
+                        <p class="checked">Scrub toilets</p>
+                        <p class="checked">Clean outside of cabinets and deawers</p>
+                        <p class="checked">Clean sinks</p>
+                        <p class="checked">Rinse and wipe bathubs</p>
+                        <p class="checked">Clean mirrors</p>
+                    </div>
+
+                </div>
+
+                <!-- third -->
+
+                <div class="youget-block">
+                    <div class="youget-text">
+                        <div class="youget-title myriad">Kitchens</div>
+                        <p class="checked">Wet wipe outside of fridge</p>
+                        <p class="checked">Clean all surfaces</p>
+                        <p class="checked">Wipe down outside of appliances</p>
+                        <p class="checked">Clean sink</p>
+                        <p class="checked">Clean stove</p>
+                        <p class="checked">Wipe down outside of oven</p>
+                        <p class="checked">Clean outside of cabinets and drawers</p>
+                    </div>
+                    <div class="youget-img">
+                        <img alt="" src="img/scandinavian-style-cookspace.png" class="img-responcive">
+                    </div>
+                </div>
+
+                <!-- firth -->
+
+                <div class="youget-block reverse">
+                    <div class="youget-img">
+                        <img alt="" src="img/additional-servises.png" class="img-responcive">
+                    </div>
+                    <div class="youget-text">
+                        <div class="youget-title myriad">Optional extras</div>
+                        <p class="checked icon-plus">End of lease & Move out/in available on checkout</p>
+                        <p class="checked icon-plus">Deep Cleaning</p>
+                        <p class="checked icon-plus">Inside Cabinets</p>
+                        <p class="checked icon-plus">Inside Oven</p>
+                        <p class="checked icon-plus">Interior Windows</p>
+                        <p class="checked icon-plus">Washing Dishes</p>
+                        <p class="checked icon-plus">Skirting Boards</p>
+                        <p class="checked icon-plus">Blinds</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exclusion">
+                <div class="exclusion-with-icon">Services exclusion</div>
+                <div class="exclusion-text">Chandeliers, Light Bulbs, Bio-hazards(Mold, etc..), Hoarding, Animal Waste,
+                    High Reach Areas(More than 2 step ladder), Putting away dishes, Exterior Windows.
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<footer>
+
+    <section>
+        <div class="container book-now-wrapper">
+            <div class="book-now">
+                <div class="book-now-text">
+                    <h2 class="book-now-title">Ready to book ?</h2>
+                    <p class="book-now-desc">Book professional home cleaners and handymen at a moments notice. Just pick
+                        a time and well do the rest.</p>
+                </div>
+                <div class="book-now-btns">
+                    <div class="book-btn"><a href="" class="btn btn-round btn-long active">BOOK A CLEAN</a></div>
+                    <div class="book-btn"><a href="" class="btn btn-round btn-long">SEE SERVICES</a></div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </section>
+
+    <section>
+        <div class="container footer-wrapper">
+            <div class="flogo-wrapper">
+                <div class="flogo">
+                    <img src="img/Logo.png" alt="">
+                </div>
+                <p class="ftext">
+                    Donec nec diam convallis, accumsan nunc eu, interdum leo. Donec commodo quam quis nisi hendrerit
+                </p>
+            </div>
+            <div class="adress-wrapper">
+                <p class="adress with-icon">Unit 5, 113 Industrial Road<br/> Oak Flats NSW 2529 PO BOX 351<br/>Albion
+                    Park, 2527</p>
+                <p class="with-icon phone">0424 373 421<br/>0467 323 979</p>
+                <p class="with-icon email"><a href="mailto:hello@sparclean.com.au">hello@sparclean.com.au</a></p>
+            </div>
+            <div class="footer-menu-wrapper">
+                <ul class="footer-menu">
+                    <li><a href="#">SERVICES & PRICING</a></li>
+                    <li><a href="#">LOCATIONS</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">BUILDERS CLEANS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="cities-wrapper">
+                <div class="cities-title with-icon">Available here:</div>
+                <ul class="cities-list">
+                    <li>Shellharbour</li>
+                    <li>Wollongong</li>
+                    <li>Kiama</li>
+                    <li><a href="#">See more</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="container copyrigth-wrapper">
+        <div class="created-by">
+            <div class="created-by-text">Created by <span class="line"></span></div>
+            <img src="img/Bitmap.png" alt="">
+        </div>
+        <div class="copyrigth">
+            <div class="years">© 2020 Sparclean Services.</div>
+            <a class="terms" href="#">Terms & Conditions</a>
+            <a class="privat" href="#">Privacy Policy</a>
+
+        </div>
+    </div>
+
+</footer>
+
+<link rel="stylesheet" href="css/main.min.css">
+<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,201 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.header .logo
+		margin-right: 30px
+	.main-nav-container .main-nav li
+		margin-right: 35px	
+	.estimator-wrapper .price-estimator-main
+		padding: 70px 30px
+	.estimator-wrapper .price-estimator-main .price-estimator-swichers .price-estimator-line .price-estimator-btns .price-estimator-btn
+		margin-right: 15px
+	.estimator-wrapper .price-estimator-main .price-estimator-result
+		margin-left: 40px	
+	.estimator-wrapper .price-estimator-main .price-estimator-result .price-amount #price-amount
+		font-size: 45px		
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.main-nav-container .main-nav
+		display: none
+	.burger
+		display: block
+		align-self: center
+		cursor: pointer
+		img
+			width: 50px
+			height: 50px
+	.main-nav-container 
+		justify-content: flex-end		
+	.estimator-wrapper .price-estimator-main
+		flex-direction: column
+	.estimator-wrapper .price-estimator-main .price-estimator-swichers
+		flex-basis: 0
+		margin-bottom: 40px
+	.estimator-wrapper .price-estimator-main .price-estimator-result
+		margin-left: 0
+	.img-responcive
+		max-width: 100%
+	.youget-blocks
+		.youget-block
+			margin-left: 0
+			margin-right: 0
+			flex-direction: column
+			justify-content: flex-start	
+			align-items: stretch
+			margin-top: 0
+			&.reverse
+				flex-direction: column-reverse
+			.youget-text
+				margin-top: 60px
+				margin-bottom: 60px
+	.youget-blocks .youget-block div:first-of-type
+		margin-right: 0
+		
+	.main-nav-container.active
+		.main-nav.flex
+			display: block
+			position: absolute
+			z-index: 10
+			top: 100px
+			background-color: #fff
+			box-shadow: 0 0 18px 14px #39494e26
+			li > a
+				margin: 10px
+				padding: 10px
+				display: block
+				width: 100%
+		
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.services
+		margin-top: 60px
+	.pricing-boxes
+		flex-wrap: wrap
+		.price-box
+			margin-bottom: 60px
+	.estimator-wrapper
+		margin-top: 60px
+	.estimator-wrapper .price-estimator-main .price-estimator-swichers .price-estimator-line
+		flex-direction: column
+	.estimator-wrapper .price-estimator-main .price-estimator-swichers .price-estimator-line .price-estimator-line-name
+		display: block
+		width: 100%
+		margin-bottom: 20px
+	.estimator-wrapper .price-estimator-main .price-estimator-swichers .price-estimator-line .price-estimator-btns .price-estimator-btn label
+		line-height: 1
+		min-height: 47px 
+		min-width: 47px	
+	.grid-table .table-grid-head
+		grid-template-columns:  repeat(4, 1fr)
+	.book-now-wrapper .book-now
+		flex-direction: column
+	.book-now-wrapper .book-now .book-now-text
+		flex-basis: 0
+	.book-now-wrapper .book-now .book-now-btns
+		flex-basis: 0
+	.footer-wrapper
+		grid-template-columns: repeat(2,1fr)
+		justify-content: flex-start
+	.footer-wrapper .flogo-wrapper
+		margin-bottom: 40px
+	.footer-menu-wrapper
+		justify-self: baseline
+	.copyrigth-wrapper
+		flex-direction: column
+	.created-by
+		align-self: baseline
+		margin-bottom: 40px
+	.copyrigth-wrapper .copyrigth
+		margin-left: 0
+		flex-direction: column-reverse
+		margin-right: 0
+	.book-now-wrapper
+		.book-now-btns
+			margin-top: 20px
+			.book-btn
+				margin-right: 20px
+				&:last-child
+					margin-right: 0
+	
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.pricing-boxes .price-box
+		margin-right: 0
+	.estimator-wrapper .price-estimator-main .price-estimator-swichers .price-estimator-line .price-estimator-btns
+		flex-wrap: wrap
+	.estimator-wrapper .price-estimator-main .price-estimator-swichers .price-estimator-line .price-estimator-btns .price-estimator-btn
+		margin-bottom: 15px
+	.estimator-wrapper .price-estimator-main
+		padding: 40px 20px
+	.container 
+		&.estimator-wrapper
+			width: auto
+	.grid-table .table-grid-head span
+		&:nth-child(n+2)
+			display: none
+	.grid-table .table-grid-content > span	
+		align-self: stretch	
+	.grid-table .table-grid-head .tabel-label
+		top: 50px
+	.exclusion
+		flex-direction: column
+		.exclusion-with-icon
+			margin-bottom: 40px
+	.book-now-wrapper .book-now .book-now-text .book-now-title
+		font-size: 38px
+	.footer-wrapper
+		grid-template-columns: repeat(1,1fr)
+		justify-items: baseline
+	.footer-wrapper .adress-wrapper
+		margin-left: 0
+	.footer-wrapper .cities-wrapper
+		justify-self: start
+	.footer-wrapper .footer-menu-wrapper
+		margin-top: 40px
+		margin-bottom: 40px
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
